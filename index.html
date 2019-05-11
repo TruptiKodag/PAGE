@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Breadcrumb</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+
+</head>
+<body>
+<div class="container">
+	<ol class="breadcrumb">
+		<li class="stud-info"><a href="#">StudentDetails</a></li>
+		<li class="edu-info"><a href="#">EducationDetails</a></li>
+	</ol>
+	<form class="form stud-data">
+		<label class="">First Name</label>
+			<input type="text" id="fname" class="form-control" placeholder="Enter first name">
+		<label class="">Last Name</label>
+			<input type="text" id="lname" class="form-control" placeholder="Enter last name">
+		<label class="">Contact</label>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon1">+91</span>
+			<input type="text" id="contact" class="form-control" placeholder="Enter mobile number">
+		</div>
+			<br>
+			<input type="submit" value="Next" class="btn btn-primary btnnext">
+	</form>
+	<form class="edu-data">
+		<label>Education Details</label><br>
+		<label>Stream</label><br>
+		<input type="text" id="stream" class="form-control"  placeholder="Enter Stream"><br>
+		<label>Branch</label><br>
+		<input type="text" id="branch" class="form-control"  placeholder="Enter Branch"><br>
+		<label>Institute Name</label><br>
+		<input type="text" id="institute" class="form-control"  placeholder="Enter Institute Name">
+		<br>
+		<input type="submit" value="Submit" class="btn btn-primary btnSubmit">
+	</form>
+	
+	<table class="table1 table table-bordered">
+	<caption><strong>Student Details</strong></caption>
+		<thead>
+			<tr>
+				<th>FirstName</th>
+				<th>LastName</th>
+				<th>Contact</th>
+				<th>Stream</th>
+				<th>Branch</th>
+				<th>Institute</th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+			
+		</tbody>
+	</table>
+
+	
+</div>
+</body>
+</html>
